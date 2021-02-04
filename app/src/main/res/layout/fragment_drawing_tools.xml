@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/btnPencil"
+        android:layout_width="0dp"
+        android:layout_height="0sp"
+        android:layout_margin="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/pencil"
+        android:background="@drawable/textview_border"
+        app:layout_constraintBottom_toTopOf="@id/sbStrokeWidth"
+        app:layout_constraintEnd_toEndOf="@id/guideline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btnEraser"
+        android:layout_width="0dp"
+        android:layout_height="0sp"
+        android:layout_margin="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/textview_border"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/eraser"
+        app:layout_constraintBottom_toTopOf="@id/sbStrokeWidth"
+        app:layout_constraintStart_toStartOf="@id/guideline6"
+        app:layout_constraintEnd_toEndOf="@id/guideline23"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnUndo"
+        android:layout_width="0dp"
+        android:layout_height="0sp"
+        android:layout_margin="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/textview_border"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/undo"
+        app:layout_constraintBottom_toTopOf="@id/sbStrokeWidth"
+        app:layout_constraintStart_toStartOf="@id/guideline23"
+        app:layout_constraintEnd_toEndOf="@id/guideline26"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <SeekBar
+        android:id="@+id/sbStrokeWidth"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:minHeight="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline23"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDragCharacters"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/textview_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline26"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
