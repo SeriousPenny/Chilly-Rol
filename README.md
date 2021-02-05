@@ -10,3 +10,5 @@ Some of the things it allows are:
 - Buttons on each card so you can increase or decrease each creature's health and botched dice throws easily.
 - A custom canvas where you can draw what's happening while you're playing. It also allows to place each creature in the canvas for easier understanding.
   - You can change the pencil color by holding down the pencil icon!
+
+Honestly, it's not the best looking app you'll ever find, but I have the same design imagination of a potato, so don't take that too much into account, please!
